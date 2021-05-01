@@ -1,0 +1,18 @@
+$maincolor:#6A8372;
+$basecolor:rgba(106,131,114,0.1);
+
+$fontsize:20px;
+$bigfontsize:35px;
+$tittlefontsize:30px;
+
+@mixin menuicon ($url){
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url($url);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}

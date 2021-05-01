@@ -1,0 +1,290 @@
+html,body{
+    color: $maincolor;
+    font-size: $fontsize;
+}
+header{
+    position: relative;
+    width:100%;
+    height:100vh;
+    background-image: url(../img/sakura.jpg);
+    background-position: center;
+    background-size: cover;
+    .tittle{
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        margin: -185px -225px 0 0 ;
+        text-align: center;
+        width: 450px;
+        height: 250px;
+        background-color: rgba(255,255,255,0.5);
+        border:2px solid $maincolor;
+        border-radius: 5px;
+        h1{
+            margin-top: 61.5px;
+            margin-bottom: 10px;
+            font-size: $bigfontsize;
+            text-shadow: 1px 1px 2px rgba(53, 53, 53, 0.219);
+        }
+        p{
+            margin: 0;
+        }
+    }
+    .scroll{
+        width: 40px;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        margin: 0 -30px 0 0 ;
+        
+        span{
+            position: absolute;
+            width: 30px;
+            height: 5px;
+            border-radius: 3px;
+            background-color: $maincolor;
+            right: 50%;
+            top: 0;
+        }
+        .line01{
+            transform: rotate(45deg);
+        }
+        .line02{
+            right: 0;
+            transform: rotate(-45deg);
+        }
+        .line03{
+            top: 15px;
+        }
+    }
+}
+.menu{
+    min-width: 450px;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    border-bottom: 1px solid $maincolor;
+    padding: 10px 0;    
+    li{     
+        &:first-child{
+            position: absolute;
+            left: 0;  
+        }
+          
+        a{
+            color: $maincolor;
+            text-decoration: none;
+            padding: 10px;
+            &:hover{
+             border-bottom: 5px solid $maincolor;   
+            }
+            &::before{
+                 @include menuicon("");
+            }     
+        }
+        .menu_home::before{
+            @include menuicon("../img/home.png");
+        }
+        .menu_resume::before{
+            @include menuicon("../img/contract.png");
+        }
+        .menu_skill::before{
+            @include menuicon("../img/like.png");
+        }
+        .menu_portfolo::before{
+            @include menuicon("../img/folder.png");
+        }
+        .menu_contact::before{
+            @include menuicon("../img/email.png");
+        }
+    }
+}
+.wrap{
+    section{
+        margin-top: 125px;
+        .midasi{
+            text-align: center;
+            h2{
+                font-size: $tittlefontsize;
+                margin-bottom: 0;
+            }
+            p{
+                position: relative;
+                width: fit-content;
+                margin: 0 auto;
+                &::before{
+                    position: absolute;
+                    top: 55%;
+                    left: -35px;
+                    content: "";
+                    width: 25px;
+                    height: 1px;
+                    display: inline-block;
+                    background-color: $maincolor; 
+                }
+                &::after{
+                    position: absolute;
+                    top: 55%;
+                    right: -35px;
+                    content: "";
+                    width: 25px;
+                    height: 1px;
+                    display: inline-block;
+                    background-color: $maincolor; 
+                }
+            }
+        }
+        .content{
+            max-width: 940px;
+            margin: 75px auto 0;
+        }     
+    }
+}
+.resume_content{
+    height: 300px;
+    .myphoto{
+        float: left;
+        width: 300px;
+        background-image: url(../img/myphoto.jpg);
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px;
+    }
+    .introduction{
+        float: right;
+        width: 600px;
+        margin: 60px 0;
+        p{
+            margin: 0;
+            line-height: 1.5em;
+        }
+    }
+}
+.skill_content{
+    min-height: 300px;
+    .graph{
+        float: left;
+        p{
+            width: 300px;
+            float: left;
+            text-align: center;
+            z-index: 5;
+            margin: 136px 0;
+            font-size:$tittlefontsize - 5;
+        }
+    }
+    .skillList{
+        float: right;
+        width: 490px;
+        margin: 60px auto;  
+    }
+}
+.skill{
+    margin-top: 20px;
+    &:first-child{
+        margin-top: 0;
+    } 
+    .tittle{
+        font-size: $tittlefontsize - 5;
+        display: flex;
+        P{
+            margin: 0;
+            width: 130px;
+        }
+        .down{
+            margin-left: 10px;
+            position: relative;
+            width: 30px;
+            height: 30px;
+            .line{
+                position: absolute;
+                top: 50%;
+                right: 50%;
+                width: 13px;
+                height: 2px;
+                background-color: $maincolor;
+            }
+            .line01{   
+                margin: -5px -3px 0 0 ; 
+                transform: rotate(45deg);
+            }
+            .line02{
+                margin: -5px -12px 0 0 ;
+                transform: rotate(-45deg);
+            }
+        }
+        .graph_line{
+            position: relative;
+            width: 300px;
+            margin-left: 20px;            
+            .line_bottom{
+                margin: 4px 0 0 0;
+                height: 15px;
+                background-color: $maincolor;
+                border-radius: 30px;
+            }
+            .cover{
+                margin-top: 4px;
+                position: absolute;
+                top: 0;
+                display: inline-block;
+                width: 5px;
+                height: 15px;
+                background-color: #fff;
+            }
+            .cover01{
+                left: 57.5px;
+            }
+            .cover02{
+                left: 117.5px;
+            }
+            .cover03{
+                left: 177.5px;
+            }
+            .cover04{
+                left: 237.5px;
+            }
+        }   
+    }    
+}
+.portfolo_content{
+    .portfolo{
+       position: relative;
+       display: inline-block;
+       width: 450px;
+       height: 300px;
+       margin:12px 8px;
+       background-color: aquamarine;
+       .name{
+           width: 440px;
+           padding: 5px;
+           position: absolute;
+           bottom: 0;
+           color: #fff;
+           background-color: rgba(51, 51, 51, 0.3);
+       } 
+    }
+    .portfolo01{
+        background-image: url(../img/resume.PNG);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.none{
+    display: none;
+}

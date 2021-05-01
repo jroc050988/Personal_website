@@ -1,0 +1,56 @@
+@mixin cover($rotate) {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin: -150px -12.5px 0 0;
+    background-color: #fff;
+    transform: rotate($rotate);
+    transform-origin:50% 100%;
+    width: 25px;
+    height: 151px;
+    z-index: 3;
+}
+.graph_circle{
+    z-index: -1;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    .circle{
+        border-radius: 50%;
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        
+    }
+    .circle_top{
+        width: 250px;
+        height: 250px;
+        background-color: #fff;
+        z-index: 2;
+        margin: -125px -125px 0 0;
+    }
+    .circle_bottom{
+        width: 300px;
+        height: 300px;
+        background-color: $maincolor;
+        z-index: 1;
+        margin: -150px -150px 0 0;
+    }
+    .cover{
+        .line01{
+            @include cover(0deg);
+        }
+        .line02{
+            @include cover(72deg);
+        }
+        .line03{
+            @include cover(144deg);
+        }
+        .line04{
+            @include cover(216deg);
+        }
+        .line05{
+            @include cover(288deg);
+        }
+    }
+}

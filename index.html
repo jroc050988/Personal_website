@@ -10,124 +10,190 @@
 </head>
 <body>
     <header>
-        <div>
-            <h1>Hello I'm LiLi Weng</h1>
+        <div class="tittle">
+            <h1>Hello <br>I'm LiLi Weng</h1>
             <p>こんにちは。</p>   
         </div>
         <div class="scroll">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="line01"></span>
+            <span class="line02"></span>
+            <span class="line01 line03"></span>
+            <span class="line02 line03"></span>
         </div>        
     </header>
     <nav>
         <ul class="menu">
-            <li class="menu_home">首頁</li>
-            <li class="menu_resume">簡歷</li>
-            <li class="menu_skill">技能</li>
-            <li class="menu_portfolo">作品集</li>
-            <li class="menu_contact">聯絡我</li>
+            <li><a href="#home" class="menu_home">首頁</a></li>
+            <li><a href="#resume" class="menu_resume">簡歷</a></li>
+            <li><a href="#skill" class="menu_skill">技能</a></li>
+            <li><a href="#portfolo" class="menu_portfolo">作品集</a></li>
+            <li><a href="#contact" class="menu_contact">聯絡我</a></li>
         </ul>
     </nav>
-    <section>
-        <h2>我的簡歷</h2>
-        <p>resume</p>
-        <div class="myphoto">
-            <img>
-        </div>
-        <div>
-            <p>我是翁莉雯，今年25歲，來自新北市三重。<br>
-            2018年畢業於亞洲大學數位多媒體學系，畢業後在一家旅行社擔任業務助理和負責網頁美編工作，
-            短暫工作七個月後前往日本東京留學，為了進到專門學校學習網頁設計，我在日本語學校讀了一年之後，
-            順利申請上日本電子專門學校的網頁設計系就讀，但由於日本的疫情嚴重加上家庭因素，讀完第一學年後
-            便休學回到台灣。</p>
-        </div>
-    </section>
-    <section>
-        <h2>技能</h2>
-        <p>skill</p>
-        <div>
-            <div>HTML/CSS</div>
-            <div></div>
-        </div>
-        <div class="skillList">
-            <div class="html">
-                <div class="tittle">HTML/CSS</div>
-                <div></div>
-                <ul>
-                    <li>瞭解HTML語意。</li>
-                    <li>能夠使用CSS做出網頁排版與RWD響應式設計。</li>
-                    <li>瞭解使用CSS3的animate、transform跟transition。</li>
-                    <li>能夠使用SCSS規劃web layout。</li>
-                </ul>
+    <main class="wrap">
+        <section>
+            <div class="midasi">
+                <h2>我的簡歷</h2>
+                <p>resume</p>
             </div>
-            <div class="js">
-                <div class="tittle">js/jQuery</div>
-                <div></div>
-                <ul>
-                    <li>對Javascript有基礎了解。</li>
-                    <li>ajax抓取第三方api資料。</li>
-                    <li>使用localstorge儲存、讀取紀錄。</li>
-                    <li>會使用JQuery做出動畫效果、套用plugin於網頁上。</li>
-                </ul>
+            <div class="content resume_content">
+                <div class="myphoto"></div>
+                <div class="introduction">
+                    <p>我是翁莉雯，今年25歲，來自新北市三重。<br>
+                    2018年畢業於亞洲大學數位多媒體學系，畢業後在一家旅行社擔任業務助理和負責網頁美編工作，
+                    短暫工作七個月後前往日本東京留學，為了進到專門學校學習網頁設計，我在日本語學校讀了一年之後，
+                    順利申請上日本電子專門學校的網頁設計系就讀，但由於日本的疫情嚴重加上家庭因素，讀完第一學年後
+                    便休學回到台灣。</p>
+                </div>
             </div>
-            <div class="git">
-                <div class="tittle">Git</div>
-                <div></div>
-                <ul>
-                    <li>會操作基礎git指令。</li>
-                    <li>利用GitHub做版本控制。</li>
-                </ul>
+        </section>
+        <section>
+            <div class="midasi">
+                <h2>技能</h2>
+                <p>skill</p>
             </div>
-            <div class="adobe">
-                <div class="tittle">Adobe系列</div>
-                <div></div>
-                <ul>
-                    <li>PhotoShop</li>
-                    <li>Illustrator</li>
-                    <li>XD</li>
-                </ul>
+            <div class="content skill_content">
+                <div class="graph">
+                    <p>HTML/CSS</p>
+                    <div class="graph_circle">
+                        <div class="circle circle_top"></div>
+                        <div class="circle circle_bottom"></div>
+                        <div class="cover">
+                            <div class="line01"></div>
+                            <div class="line02"></div>
+                            <div class="line03"></div>
+                            <div class="line04"></div>
+                            <div class="line05"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillList">
+                    <div class="skill html">
+                        <div class="tittle">
+                            <p>HTML/CSS</p>
+                            <div class="down">
+                                <div class="line line01"></div>
+                                <div class="line line02"></div>
+                            </div>
+                            <div class="graph_line">
+                                <div class="line_bottom"></div>
+                                <span class="cover cover01"></span>
+                                <span class="cover cover02"></span>
+                                <span class="cover cover03"></span>
+                                <span class="cover cover04"></span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>瞭解HTML語意。</li>
+                            <li>能夠使用CSS做出網頁排版與RWD響應式設計。</li>
+                            <li>瞭解使用CSS3的animate、transform跟transition。</li>
+                            <li>能夠使用SCSS規劃web layout。</li>
+                        </ul>
+                    </div>
+                    <div class="skill js">
+                        <div class="tittle">
+                            <p>js/jQuery</p>
+                            <div class="down">
+                                <div class="line line01"></div>
+                                <div class="line line02"></div>
+                            </div>
+                            <div class="graph_line">
+                                <div class="line_bottom"></div>
+                                <span class="cover cover01"></span>
+                                <span class="cover cover02"></span>
+                                <span class="cover cover03"></span>
+                                <span class="cover cover04"></span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>對Javascript有基礎了解。</li>
+                            <li>ajax抓取第三方api資料。</li>
+                            <li>使用localstorge儲存、讀取紀錄。</li>
+                            <li>會使用JQuery做出動畫效果、套用plugin於網頁上。</li>
+                        </ul>
+                    </div>
+                    <div class="skill git">
+                        <div class="tittle">
+                            <p>Git</p>
+                            <div class="down">
+                                <div class="line line01"></div>
+                                <div class="line line02"></div>
+                            </div>
+                            <div class="graph_line">
+                                <div class="line_bottom"></div>
+                                <span class="cover cover01"></span>
+                                <span class="cover cover02"></span>
+                                <span class="cover cover03"></span>
+                                <span class="cover cover04"></span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>會操作基礎git指令。</li>
+                            <li>利用GitHub做版本控制。</li>
+                        </ul>
+                    </div>
+                    <div class="skill adobe">
+                        <div class="tittle">
+                            <p>Adobe系列</p>
+                            <div class="down">
+                                <div class="line line01"></div>
+                                <div class="line line02"></div>
+                            </div>
+                            <div class="graph_line">
+                                <div class="line_bottom"></div>
+                                <span class="cover cover01"></span>
+                                <span class="cover cover02"></span>
+                                <span class="cover cover03"></span>
+                                <span class="cover cover04"></span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>PhotoShop</li>
+                            <li>Illustrator</li>
+                            <li>XD</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <h2>技能</h2>
-        <p>skill</p>
-        <div>
-            <div>
-                <img>
-                <div>我的履歷網站</div>
+        </section>
+        <section>
+            <div class="midasi">
+                <h2>作品集</h2>
+                <p>portfolo</p>
             </div>
-            <div>
-                <img>
-                <div>我的履歷網站</div>
+            <div class="content portfolo_content">
+                <div class="portfolo portfolo01">
+                    <div class="name">我的履歷網站</div>
+                </div>
+                <div class="portfolo portfolo01">
+                    <div class="name">我的履歷網站</div>
+                </div>
+                <div class="portfolo portfolo01">
+                    <div class="name">我的履歷網站</div>
+                </div>
+                <div class="portfolo portfolo01">
+                    <div class="name">我的履歷網站</div>
+                </div>
             </div>
-            <div>
-                <img>
-                <div>我的履歷網站</div>
+        </section>
+        <section>
+            <div class="midasi">
+                <h2>聯絡我</h2>
+                <p>contact</p>
             </div>
-            <div>
-                <img>
-                <div>我的履歷網站</div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <h2>聯絡我</h2>
-        <p>contact</p>
-        <form>
-            <input type="text">
-            <input type="email">
-            <input type="text">
-            <input type="submit">
-        </form>
-        <ul>
-            <li>翁莉雯</li>
-            <li>+886 989440223</li>
-            <li>jroc050988@gmail.com</li>
-        </ul>
-    </section>
+            <form>
+                <input type="text">
+                <input type="email">
+                <input type="text">
+                <input type="submit">
+            </form>
+            <ul>
+                <li>翁莉雯</li>
+                <li>+886 989440223</li>
+                <li>jroc050988@gmail.com</li>
+            </ul>
+        </section>
+    </main>
     <footer>
         <div class="top"></div>
         <small>Copyright © 2021 Lili Weng. All rights reserved.</small>

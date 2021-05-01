@@ -1,1 +1,490 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+html, body {
+  color: #6A8372;
+  font-size: 20px;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/sakura.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+header .tittle {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin: -185px -225px 0 0;
+  text-align: center;
+  width: 450px;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid #6A8372;
+  border-radius: 5px;
+}
+
+header .tittle h1 {
+  margin-top: 61.5px;
+  margin-bottom: 10px;
+  font-size: 35px;
+  text-shadow: 1px 1px 2px rgba(53, 53, 53, 0.219);
+}
+
+header .tittle p {
+  margin: 0;
+}
+
+header .scroll {
+  width: 40px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  margin: 0 -30px 0 0;
+}
+
+header .scroll span {
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #6A8372;
+  right: 50%;
+  top: 0;
+}
+
+header .scroll .line01 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+header .scroll .line02 {
+  right: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+header .scroll .line03 {
+  top: 15px;
+}
+
+.menu {
+  min-width: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+  border-bottom: 1px solid #6A8372;
+  padding: 10px 0;
+}
+
+.menu li:first-child {
+  position: absolute;
+  left: 0;
+}
+
+.menu li a {
+  color: #6A8372;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.menu li a:hover {
+  border-bottom: 5px solid #6A8372;
+}
+
+.menu li a::before {
+  content: " ";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.menu li .menu_home::before {
+  content: " ";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/home.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.menu li .menu_resume::before {
+  content: " ";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/contract.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.menu li .menu_skill::before {
+  content: " ";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/like.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.menu li .menu_portfolo::before {
+  content: " ";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/folder.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.menu li .menu_contact::before {
+  content: " ";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/email.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.wrap section {
+  margin-top: 125px;
+}
+
+.wrap section .midasi {
+  text-align: center;
+}
+
+.wrap section .midasi h2 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.wrap section .midasi p {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.wrap section .midasi p::before {
+  position: absolute;
+  top: 55%;
+  left: -35px;
+  content: "";
+  width: 25px;
+  height: 1px;
+  display: inline-block;
+  background-color: #6A8372;
+}
+
+.wrap section .midasi p::after {
+  position: absolute;
+  top: 55%;
+  right: -35px;
+  content: "";
+  width: 25px;
+  height: 1px;
+  display: inline-block;
+  background-color: #6A8372;
+}
+
+.wrap section .content {
+  max-width: 940px;
+  margin: 75px auto 0;
+}
+
+.resume_content {
+  height: 300px;
+}
+
+.resume_content .myphoto {
+  float: left;
+  width: 300px;
+  background-image: url(../img/myphoto.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.resume_content .introduction {
+  float: right;
+  width: 600px;
+  margin: 60px 0;
+}
+
+.resume_content .introduction p {
+  margin: 0;
+  line-height: 1.5em;
+}
+
+.skill_content {
+  min-height: 300px;
+}
+
+.skill_content .graph {
+  float: left;
+}
+
+.skill_content .graph p {
+  width: 300px;
+  float: left;
+  text-align: center;
+  z-index: 5;
+  margin: 136px 0;
+  font-size: 25px;
+}
+
+.skill_content .skillList {
+  float: right;
+  width: 490px;
+  margin: 60px auto;
+}
+
+.skill {
+  margin-top: 20px;
+}
+
+.skill:first-child {
+  margin-top: 0;
+}
+
+.skill .tittle {
+  font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.skill .tittle P {
+  margin: 0;
+  width: 130px;
+}
+
+.skill .tittle .down {
+  margin-left: 10px;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.skill .tittle .down .line {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 13px;
+  height: 2px;
+  background-color: #6A8372;
+}
+
+.skill .tittle .down .line01 {
+  margin: -5px -3px 0 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.skill .tittle .down .line02 {
+  margin: -5px -12px 0 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.skill .tittle .graph_line {
+  position: relative;
+  width: 300px;
+  margin-left: 20px;
+}
+
+.skill .tittle .graph_line .line_bottom {
+  margin: 4px 0 0 0;
+  height: 15px;
+  background-color: #6A8372;
+  border-radius: 30px;
+}
+
+.skill .tittle .graph_line .cover {
+  margin-top: 4px;
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  width: 5px;
+  height: 15px;
+  background-color: #fff;
+}
+
+.skill .tittle .graph_line .cover01 {
+  left: 57.5px;
+}
+
+.skill .tittle .graph_line .cover02 {
+  left: 117.5px;
+}
+
+.skill .tittle .graph_line .cover03 {
+  left: 177.5px;
+}
+
+.skill .tittle .graph_line .cover04 {
+  left: 237.5px;
+}
+
+.portfolo_content .portfolo {
+  position: relative;
+  display: inline-block;
+  width: 450px;
+  height: 300px;
+  margin: 12px 8px;
+  background-color: aquamarine;
+}
+
+.portfolo_content .portfolo .name {
+  width: 440px;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
+.portfolo_content .portfolo01 {
+  background-image: url(../img/resume.PNG);
+  background-position: center;
+  background-size: cover;
+}
+
+.none {
+  display: none;
+}
+
+.graph_circle {
+  z-index: -1;
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.graph_circle .circle {
+  border-radius: 50%;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+}
+
+.graph_circle .circle_top {
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  z-index: 2;
+  margin: -125px -125px 0 0;
+}
+
+.graph_circle .circle_bottom {
+  width: 300px;
+  height: 300px;
+  background-color: #6A8372;
+  z-index: 1;
+  margin: -150px -150px 0 0;
+}
+
+.graph_circle .cover .line01 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin: -150px -12.5px 0 0;
+  background-color: #fff;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  width: 25px;
+  height: 151px;
+  z-index: 3;
+}
+
+.graph_circle .cover .line02 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin: -150px -12.5px 0 0;
+  background-color: #fff;
+  -webkit-transform: rotate(72deg);
+          transform: rotate(72deg);
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  width: 25px;
+  height: 151px;
+  z-index: 3;
+}
+
+.graph_circle .cover .line03 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin: -150px -12.5px 0 0;
+  background-color: #fff;
+  -webkit-transform: rotate(144deg);
+          transform: rotate(144deg);
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  width: 25px;
+  height: 151px;
+  z-index: 3;
+}
+
+.graph_circle .cover .line04 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin: -150px -12.5px 0 0;
+  background-color: #fff;
+  -webkit-transform: rotate(216deg);
+          transform: rotate(216deg);
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  width: 25px;
+  height: 151px;
+  z-index: 3;
+}
+
+.graph_circle .cover .line05 {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin: -150px -12.5px 0 0;
+  background-color: #fff;
+  -webkit-transform: rotate(288deg);
+          transform: rotate(288deg);
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  width: 25px;
+  height: 151px;
+  z-index: 3;
+}
+/*# sourceMappingURL=style.css.map */
