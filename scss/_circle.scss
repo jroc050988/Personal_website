@@ -10,7 +10,33 @@
     height: 151px;
     z-index: 3;
 }
+@mixin circle ($color1,$color2,$rotate1,$rotate2,$radius){
+    transition: 1s;
+    opacity: 100%;
+    .circlebottom{
+        box-sizing:border-box;
+        position: absolute;
+        width: 150px;
+        height: 300px;
+        transform-origin:100% 50%;
+        
+    }
+    .circle01{ 
+        border-radius: $radius 0 0 $radius;
+        background-color: $color1; //#fff or maincolor
+        z-index: 2;
+        transform: rotate($rotate1);
+    }
+    .circle02{
+        border-radius: 150px 0 0 150px;
+        background-color: $color2;
+        z-index: 1;
+        transform: rotate($rotate2); //0~180    
+    }    
+}
+
 .graph_circle{
+    opacity: 0;
     z-index: -1;
     position: relative;
     width: 300px;
@@ -19,22 +45,14 @@
         border-radius: 50%;
         position: absolute;
         right: 50%;
-        top: 50%;
-        
+        top: 50%; 
     }
     .circle_top{
         width: 250px;
         height: 250px;
         background-color: #fff;
-        z-index: 2;
+        z-index: 10;
         margin: -125px -125px 0 0;
-    }
-    .circle_bottom{
-        width: 300px;
-        height: 300px;
-        background-color: $maincolor;
-        z-index: 1;
-        margin: -150px -150px 0 0;
     }
     .cover{
         .line01{
@@ -54,3 +72,25 @@
         }
     }
 }
+.part1{
+    
+    @include circle(#fff,$maincolor,0,72deg,0); 
+ }
+ .part2{
+     @include circle(#fff,$maincolor,0,144deg,0); 
+  }
+  .part3{
+     @include circle($maincolor,$maincolor,-144deg,180deg,150px); 
+  }
+  .part4{
+     @include circle($maincolor,$maincolor,-72deg,180deg,150px); 
+  }
+  .part5{
+     @include circle($maincolor,$maincolor,0,180deg,150px); 
+  }
+
+// 1 #fff,$maincolor,0,72deg,0
+// 2 #fff,$maincolor,0,144deg,0
+// 3 $maincolor,$maincolor,-144deg,180deg,150px
+// 4 $maincolor,$maincolor,-72deg,180deg,150px
+// 5 $maincolor,$maincolor,0,180deg,150px
