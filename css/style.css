@@ -410,6 +410,8 @@ header .scroll .line03 {
   position: relative;
   width: 30px;
   height: 30px;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .skill .tittle .down .line {
@@ -431,6 +433,15 @@ header .scroll .line03 {
   margin: -5px -12px 0 0;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+.skill .tittle .up {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: rotate(181deg) translateY(10px);
+          transform: rotate(181deg) translateY(10px);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
 }
 
 .skill .tittle .graph_line {
@@ -509,26 +520,56 @@ header .scroll .line03 {
 }
 
 .portfolo_content .portfolo {
+  position: relative;
+  overflow: hidden;
   cursor: pointer;
   position: relative;
   display: inline-block;
   width: 450px;
   height: 300px;
-  margin: 12px 8px;
-  background-color: aquamarine;
+  margin: 8px 6px;
+  background-color: #333;
+  border: 1px solid #6A8372;
+}
+
+.portfolo_content .portfolo:hover .name {
+  -webkit-transition: 1s;
+  transition: 1s;
+  position: absolute;
+  bottom: 0px;
 }
 
 .portfolo_content .portfolo .name {
+  -webkit-transition: 1s;
+  transition: 1s;
   width: 440px;
   padding: 5px;
   position: absolute;
-  bottom: 0;
+  bottom: -33px;
   color: #fff;
   background-color: rgba(51, 51, 51, 0.3);
 }
 
 .portfolo_content .portfolo01 {
   background-image: url(../img/resume.PNG);
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolo_content .portfolo02 {
+  background-image: url(../img/API.PNG);
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolo_content .portfolo03 {
+  background-image: url(../img/BMI.PNG);
+  background-position: center;
+  background-size: cover;
+}
+
+.portfolo_content .portfolo04 {
+  background-image: url(../img/EC.PNG);
   background-position: center;
   background-size: cover;
 }

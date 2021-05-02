@@ -13,6 +13,8 @@ $(".skillList .tittle").click(function (e) {
     e.preventDefault();
     $(this).parent().siblings().find('ul').slideUp();
     $(this).siblings('ul').slideToggle();
+    $(this).parent().siblings().find('.down').removeClass("up");
+    $(this).find('.down').toggleClass("up");
     
 });
 $(window).scroll(function () { 

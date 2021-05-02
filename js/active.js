@@ -26,3 +26,15 @@ function changesadobe(){
     skill.innerHTML = "Adobe系列";
     circle.setAttribute("class","graph_circle part5")
 }
+
+
+
+var btn = document.querySelector('.form .btn');
+
+btn.addEventListener('click',sorry);
+function sorry(e){
+    e.preventDefault();
+    console.log(btn);
+    var userName = document.querySelector('.form .name').value;
+    alert(userName+"先生/小姐很感謝您的支持。很抱歉目前此功能尚未開放。");
+}

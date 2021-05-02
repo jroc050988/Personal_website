@@ -215,6 +215,7 @@ header{
             position: relative;
             width: 30px;
             height: 30px;
+            transition: .5s;
             .line{
                 position: absolute;
                 top: 50%;
@@ -231,6 +232,11 @@ header{
                 margin: -5px -12px 0 0 ;
                 transform: rotate(-45deg);
             }
+        }
+        .up{
+            transition: 1s;
+            transform: rotate(181deg) translateY(10px);
+            transform-origin:50% 50%;
         }
         .graph_line{
             position: relative;
@@ -289,20 +295,31 @@ header{
 .portfolo_content{
     min-height: 658px;
     .portfolo{
+        position: relative;
+        overflow:hidden;
         cursor: pointer;
         position: relative;
         display: inline-block;
         width: 450px;
         height: 300px;
-        margin:12px 8px;
-        background-color: aquamarine;
+        margin:8px 6px;
+        background-color: #333;
+        border: 1px solid $maincolor;
+        &:hover{
+            .name{
+                transition: 1s;
+                position: absolute;
+                bottom: 0px;
+            }
+        }
         .name{
-           width: 440px;
-           padding: 5px;
-           position: absolute;
-           bottom: 0;
-           color: #fff;
-           background-color: rgba(51, 51, 51, 0.3);
+            transition: 1s;
+            width: 440px;
+            padding: 5px;
+            position: absolute;
+            bottom: -33px;
+            color: #fff;
+            background-color: rgba(51, 51, 51, 0.3);
        } 
     }
     .portfolo01{
@@ -310,6 +327,22 @@ header{
         background-position: center;
         background-size: cover;
     }
+    .portfolo02{
+        background-image: url(../img/API.PNG);
+        background-position: center;
+        background-size: cover;
+    }
+    .portfolo03{
+        background-image: url(../img/BMI.PNG);
+        background-position: center;
+        background-size: cover;
+    }
+    .portfolo04{
+        background-image: url(../img/EC.PNG);
+        background-position: center;
+        background-size: cover;
+    }
+
 }
 .contact_content{
     height: 325px;
