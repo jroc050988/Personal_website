@@ -40,6 +40,60 @@
   }
 }
 
+@-webkit-keyframes html_line {
+  form {
+    width: 0;
+  }
+  to {
+    width: 300px;
+  }
+}
+
+@keyframes html_line {
+  form {
+    width: 0;
+  }
+  to {
+    width: 300px;
+  }
+}
+
+@-webkit-keyframes js_line {
+  form {
+    width: 0;
+  }
+  to {
+    width: 227px;
+  }
+}
+
+@keyframes js_line {
+  form {
+    width: 0;
+  }
+  to {
+    width: 227px;
+  }
+}
+
+@-webkit-keyframes git_line {
+  form {
+    width: 0;
+  }
+  to {
+    width: 167px;
+  }
+}
+
+@keyframes git_line {
+  form {
+    width: 0;
+  }
+  to {
+    width: 167px;
+  }
+}
+
 html, body {
   color: #6A8372;
   font-size: 20px;
@@ -392,6 +446,38 @@ header .scroll .line03 {
   border-radius: 30px;
 }
 
+.skill .tittle .graph_line .html_line {
+  width: 0;
+  -webkit-animation: html_line 1s 1s;
+          animation: html_line 1s 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.skill .tittle .graph_line .js_line {
+  width: 0;
+  -webkit-animation: js_line 1s 1s;
+          animation: js_line 1s 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.skill .tittle .graph_line .git_line {
+  width: 0;
+  -webkit-animation: git_line 1s 1s;
+          animation: git_line 1s 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.skill .tittle .graph_line .adobe_line {
+  width: 0;
+  -webkit-animation: html_line 1s 1s;
+          animation: html_line 1s 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .skill .tittle .graph_line .cover {
   margin-top: 4px;
   position: absolute;
@@ -399,7 +485,7 @@ header .scroll .line03 {
   display: inline-block;
   width: 5px;
   height: 15px;
-  background-color: #fff;
+  background-color: #f7f2f1;
 }
 
 .skill .tittle .graph_line .cover01 {

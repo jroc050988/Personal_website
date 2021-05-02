@@ -24,9 +24,6 @@ $(window).scroll(function () {
     }
     if(scrollVal >= 1440){
         $(".graph p").show(500);
-        setTimeout(function(){ 
-            $(".graph_circle").addClass("part5"); 
-        }, 500);
         $(".skillList .html").delay(1000).slideDown();
         $(".skillList .js").delay(1300).slideDown();
         $(".skillList .git").delay(1600).slideDown();

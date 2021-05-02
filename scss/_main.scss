@@ -242,6 +242,26 @@ header{
                 background-color: $maincolor;
                 border-radius: 30px;
             }
+            .html_line{
+                width: 0;
+                animation: html_line 1s 1s;
+                animation-fill-mode:forwards;
+            }
+            .js_line{
+                width: 0;
+                animation: js_line 1s 1s;
+                animation-fill-mode:forwards;
+            }
+            .git_line{
+                width: 0;
+                animation: git_line 1s 1s;
+                animation-fill-mode:forwards;
+            }
+            .adobe_line{
+                width: 0;
+                animation: html_line 1s 1s;
+                animation-fill-mode:forwards;
+            }
             .cover{
                 margin-top: 4px;
                 position: absolute;
@@ -249,7 +269,7 @@ header{
                 display: inline-block;
                 width: 5px;
                 height: 15px;
-                background-color: #fff;
+                background-color: #f7f2f1;
             }
             .cover01{
                 left: 57.5px;
@@ -358,12 +378,6 @@ footer{
 
 
 
-
-.active{
-    .myphone{
-
-    }
-}
 
 
 
