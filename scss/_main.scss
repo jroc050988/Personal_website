@@ -29,16 +29,17 @@ header{
         }
         p{
             margin: 0;
+            
         }
     }
     .scroll{
+        cursor: pointer;
         width: 40px;
-        height: 50px;
+        height: 75px;
         position: absolute;
         bottom: 0;
         right: 50%;
-        margin: 0 -30px 0 0 ;
-        
+        margin: 0 -20px 0 0 ;    
         span{
             position: absolute;
             width: 30px;
@@ -47,6 +48,7 @@ header{
             background-color: $maincolor;
             right: 50%;
             top: 0;
+            margin: 25px -5px 0 0 ;
         }
         .line01{
             transform: rotate(45deg);
@@ -103,7 +105,7 @@ header{
 }
 .wrap{
     section{
-        margin-top: 125px;
+        padding: 125px  0;
         .midasi{
             text-align: center;
             h2{
@@ -114,6 +116,7 @@ header{
                 position: relative;
                 width: fit-content;
                 margin: 0 auto;
+                text-transform:uppercase;
                 &::before{
                     position: absolute;
                     top: 55%;
@@ -138,8 +141,12 @@ header{
         }
         .content{
             max-width: 940px;
-            margin: 75px auto 0;
-        }     
+            margin: 75px auto ;
+        } 
+            
+    }
+    .basebackground{
+        background-color: #954a4513;
     }
 }
 .resume_content{
@@ -195,6 +202,7 @@ header{
             width: 130px;
         }
         .down{
+            cursor: pointer;
             margin-left: 10px;
             position: relative;
             width: 30px;
@@ -252,6 +260,7 @@ header{
 }
 .portfolo_content{
     .portfolo{
+    cursor: pointer;
        position: relative;
        display: inline-block;
        width: 450px;
@@ -273,7 +282,68 @@ header{
         background-size: cover;
     }
 }
+.contact_content{
+    height: 325px;
+    .form{
+        float:left;
+        input{
+            width: 300px;
+            margin: 10px;
+            border: 1px solid $maincolor;
+            border-radius: 5px;
+            padding: 8px; 
+        }
+        .message{
+            margin: 10px; 
+            width: 450px;
+            height: 150px;
+            resize:none;
+            border: 1px solid $maincolor;
+            border-radius: 5px;
+            padding: 8px;
+        }
+        .btn{
+            cursor: pointer;
+            width: auto;
+            float: right;
+            background: none;
+            color: $maincolor;
+            border: 1px solid $maincolor;
+            padding: 5px 15px;
+            &:hover{
+                background-color: $maincolor;
+                color: #fff;
+            }
+        }
+    }
+    .info{
+        margin-top: 30px;
+        width: 300px;
+        float: right;
+        list-style: none;
+        padding: 0;
+        li{
+            margin: 10px 0;
+        }
+        .myname::before{
+            @include menuicon('../img/user.png')
+        }
+        .myphone::before{
+            @include menuicon('../img/telephone.png')
+        }
+        .myemail::before{
+            @include menuicon('../img/email.png')
+        }
 
+        
+    }
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    background-color: $maincolor;
+}
 
 
 

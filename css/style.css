@@ -39,12 +39,13 @@ header .tittle p {
 }
 
 header .scroll {
+  cursor: pointer;
   width: 40px;
-  height: 50px;
+  height: 75px;
   position: absolute;
   bottom: 0;
   right: 50%;
-  margin: 0 -30px 0 0;
+  margin: 0 -20px 0 0;
 }
 
 header .scroll span {
@@ -55,6 +56,7 @@ header .scroll span {
   background-color: #6A8372;
   right: 50%;
   top: 0;
+  margin: 25px -5px 0 0;
 }
 
 header .scroll .line01 {
@@ -173,7 +175,7 @@ header .scroll .line03 {
 }
 
 .wrap section {
-  margin-top: 125px;
+  padding: 125px  0;
 }
 
 .wrap section .midasi {
@@ -191,6 +193,7 @@ header .scroll .line03 {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
+  text-transform: uppercase;
 }
 
 .wrap section .midasi p::before {
@@ -217,7 +220,11 @@ header .scroll .line03 {
 
 .wrap section .content {
   max-width: 940px;
-  margin: 75px auto 0;
+  margin: 75px auto;
+}
+
+.wrap .basebackground {
+  background-color: #954a4513;
 }
 
 .resume_content {
@@ -289,6 +296,7 @@ header .scroll .line03 {
 }
 
 .skill .tittle .down {
+  cursor: pointer;
   margin-left: 10px;
   position: relative;
   width: 30px;
@@ -356,6 +364,7 @@ header .scroll .line03 {
 }
 
 .portfolo_content .portfolo {
+  cursor: pointer;
   position: relative;
   display: inline-block;
   width: 450px;
@@ -377,6 +386,102 @@ header .scroll .line03 {
   background-image: url(../img/resume.PNG);
   background-position: center;
   background-size: cover;
+}
+
+.contact_content {
+  height: 325px;
+}
+
+.contact_content .form {
+  float: left;
+}
+
+.contact_content .form input {
+  width: 300px;
+  margin: 10px;
+  border: 1px solid #6A8372;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.contact_content .form .message {
+  margin: 10px;
+  width: 450px;
+  height: 150px;
+  resize: none;
+  border: 1px solid #6A8372;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.contact_content .form .btn {
+  cursor: pointer;
+  width: auto;
+  float: right;
+  background: none;
+  color: #6A8372;
+  border: 1px solid #6A8372;
+  padding: 5px 15px;
+}
+
+.contact_content .form .btn:hover {
+  background-color: #6A8372;
+  color: #fff;
+}
+
+.contact_content .info {
+  margin-top: 30px;
+  width: 300px;
+  float: right;
+  list-style: none;
+  padding: 0;
+}
+
+.contact_content .info li {
+  margin: 10px 0;
+}
+
+.contact_content .info .myname::before {
+  content: " ";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/user.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.contact_content .info .myphone::before {
+  content: " ";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/telephone.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.contact_content .info .myemail::before {
+  content: " ";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/email.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  background-color: #6A8372;
 }
 
 .none {
