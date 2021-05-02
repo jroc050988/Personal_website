@@ -21,21 +21,26 @@ header{
         background-color: rgba(255,255,255,0.5);
         border:2px solid $maincolor;
         border-radius: 5px;
-        h1{
+        h1{ 
             margin-top: 61.5px;
             margin-bottom: 10px;
             font-size: $bigfontsize;
             text-shadow: 1px 1px 2px rgba(53, 53, 53, 0.219);
         }
         p{
+            animation: fadein 1s 1.5s;
+            opacity: 0;
+            animation-fill-mode:forwards;
             margin: 0;
             
         }
     }
     .scroll{
+        animation: downUp 2.5s ease-in-out ;
+        animation-iteration-count:infinite;
         cursor: pointer;
         width: 40px;
-        height: 75px;
+        height: 100px;
         position: absolute;
         bottom: 0;
         right: 50%;
@@ -48,7 +53,10 @@ header{
             background-color: $maincolor;
             right: 50%;
             top: 0;
-            margin: 25px -5px 0 0 ;
+            margin: 25px -5px 0 0;
+        }
+        .spanhover{
+            background-color: darken($maincolor, 20%);
         }
         .line01{
             transform: rotate(45deg);
@@ -310,7 +318,9 @@ header{
             color: $maincolor;
             border: 1px solid $maincolor;
             padding: 5px 15px;
+            transition-duration: 0.3s;
             &:hover{
+                transition-duration: 0.3s;
                 background-color: $maincolor;
                 color: #fff;
             }
@@ -348,7 +358,11 @@ footer{
 
 
 
-
+.active{
+    .myphone{
+        
+    }
+}
 
 
 

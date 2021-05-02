@@ -1,0 +1,10 @@
+@keyframes fadein {
+    form{opacity: 0;}
+    to{opacity: 100%;}
+}
+
+@keyframes downUp{
+    0%{ height: 100px;}
+    50%{ height: 75px;}
+    100%{ height: 100px;}
+}
