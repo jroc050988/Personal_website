@@ -267,15 +267,16 @@ header{
     }    
 }
 .portfolo_content{
+    min-height: 658px;
     .portfolo{
-    cursor: pointer;
-       position: relative;
-       display: inline-block;
-       width: 450px;
-       height: 300px;
-       margin:12px 8px;
-       background-color: aquamarine;
-       .name{
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        width: 450px;
+        height: 300px;
+        margin:12px 8px;
+        background-color: aquamarine;
+        .name{
            width: 440px;
            padding: 5px;
            position: absolute;
@@ -360,7 +361,7 @@ footer{
 
 .active{
     .myphone{
-        
+
     }
 }
 

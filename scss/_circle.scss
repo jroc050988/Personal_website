@@ -11,7 +11,7 @@
     z-index: 3;
 }
 @mixin circle ($color1,$color2,$rotate1,$rotate2,$radius){
-    transition: 1s;
+    transition: .5s;
     opacity: 100%;
     .circlebottom{
         box-sizing:border-box;

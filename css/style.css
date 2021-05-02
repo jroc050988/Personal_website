@@ -418,6 +418,10 @@ header .scroll .line03 {
   left: 237.5px;
 }
 
+.portfolo_content {
+  min-height: 658px;
+}
+
 .portfolo_content .portfolo {
   cursor: pointer;
   position: relative;
@@ -646,8 +650,8 @@ footer {
 }
 
 .part1 {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .5s;
+  transition: .5s;
   opacity: 100%;
 }
 
@@ -678,8 +682,8 @@ footer {
 }
 
 .part2 {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .5s;
+  transition: .5s;
   opacity: 100%;
 }
 
@@ -710,8 +714,8 @@ footer {
 }
 
 .part3 {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .5s;
+  transition: .5s;
   opacity: 100%;
 }
 
@@ -742,8 +746,8 @@ footer {
 }
 
 .part4 {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .5s;
+  transition: .5s;
   opacity: 100%;
 }
 
@@ -774,8 +778,8 @@ footer {
 }
 
 .part5 {
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .5s;
+  transition: .5s;
   opacity: 100%;
 }
 
