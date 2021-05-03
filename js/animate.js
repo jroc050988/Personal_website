@@ -1,12 +1,9 @@
 new WOW().init();
-
 $(".skillList ul").addClass("none");
-$(".scroll").mouseenter(function (e) { 
-    // values: e.clientX, e.clientY, e.pageX, e.pageY
+$(".scroll").mouseenter(function () {    
     $(".scroll span").addClass("spanhover");
 });
-$(".scroll").mouseleave(function (e) { 
-    // values: e.clientX, e.clientY, e.pageX, e.pageY
+$(".scroll").mouseleave(function () { 
     $(".scroll span").removeClass("spanhover");
 });
 $(".skillList .tittle").click(function (e) { 

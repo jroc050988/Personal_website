@@ -94,6 +94,36 @@
   }
 }
 
+@-webkit-keyframes bounceIn {
+  0% {
+    font-size: 35px;
+  }
+  25% {
+    font-size: 2em;
+  }
+  50% {
+    font-size: 35px;
+  }
+  100% {
+    font-size: 35px;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    font-size: 35px;
+  }
+  25% {
+    font-size: 2em;
+  }
+  50% {
+    font-size: 35px;
+  }
+  100% {
+    font-size: 35px;
+  }
+}
+
 html, body {
   color: #6A8372;
   font-size: 20px;
@@ -128,6 +158,8 @@ header .tittle h1 {
   margin-bottom: 10px;
   font-size: 35px;
   text-shadow: 1px 1px 2px rgba(53, 53, 53, 0.219);
+  -webkit-animation: bounceIn 2s 0s infinite;
+          animation: bounceIn 2s 0s infinite;
 }
 
 header .tittle p {

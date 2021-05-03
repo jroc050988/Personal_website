@@ -26,9 +26,10 @@ header{
             margin-bottom: 10px;
             font-size: $bigfontsize;
             text-shadow: 1px 1px 2px rgba(53, 53, 53, 0.219);
+            animation: bounceIn 2s 0s infinite;
         }
         p{
-            animation: fadein 1s 1.5s;
+            animation: fadein 1s 1.5s ;
             opacity: 0;
             animation-fill-mode:forwards;
             margin: 0;

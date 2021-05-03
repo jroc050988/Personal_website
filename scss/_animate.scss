@@ -19,3 +19,9 @@
     form{width: 0;}
     to{width: 167px;}
 }
+@keyframes bounceIn{
+    0%{ font-size: $bigfontsize; }
+    25%{ font-size: 2em; }
+    50%{ font-size: $bigfontsize; }
+    100%{ font-size: $bigfontsize; }
+}
