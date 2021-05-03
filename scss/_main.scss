@@ -232,13 +232,16 @@ nav{
         background-color: #954a4513;
     }
 }
+#resume_content{
+    max-width: 1240px;
+}
 .resume_content{
     height: 300px;
     @include ipad{
-        height: 580px;
+        height: 840px;
     }
     @include phone{
-        height: 780px;
+        height: 1200px;
     }
     .myphoto{
         float: left;
@@ -260,22 +263,23 @@ nav{
     }
     .introduction{
         float: right;
-        width: 600px;
-        margin: 60px 0;     
+        width: 910px;
+        margin: 0; 
         p{
+            font-size: $fontsize - 2px; 
             margin: 0;
             line-height: 1.5em;
             @include ipad{
                 margin: 100px auto 0;
             }
             @include phone{
-                margin: 60px auto;
-                line-height: 2em;
+                margin: 30px auto;
             }   
         }
         @include ipad{
             float: none;
             margin: 0 auto;
+            width: 600px;
         }
         @include phone{
             float: none;

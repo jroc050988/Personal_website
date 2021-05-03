@@ -20,17 +20,17 @@ $tittlefontsize:30px;
     }
 };
 @mixin ipad {
-    @media screen and (min-width: 767px) and (max-width: 985px){
+    @media screen and (min-width: 600px) and (max-width: 1229px){
         @content
     }
 };
 @mixin phone {
-    @media screen and (max-width: 767px){
+    @media screen and (max-width: 600px){
         @content
     }
 };
 @mixin pc{
-    @media screen and (min-width: 985px){
+    @media screen and (min-width: 1229px){
         @content
     }
 }

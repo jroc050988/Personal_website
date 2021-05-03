@@ -18,7 +18,7 @@ $(".skillList .tittle").click(function (e) {
 
 $(window).scroll(function () { 
     var scrollVal = $(this).scrollTop();
-    // console.log(scrollVal);
+    console.log(scrollVal);
     if(scrollVal >= window.innerHeight){
         $(".menu").addClass("phone_fixed");
         $(".hamburger").addClass("fixed");
@@ -28,21 +28,22 @@ $(window).scroll(function () {
         $(".hamburger").removeClass("fixed");
         $(".menu_space").addClass("none");
     }
-    if(scrollVal >= 600){
+    if(scrollVal >= $("#resume").offset().top -window.innerHeight){
         $(".myphoto").slideDown(1000);
         $(".introduction").delay(1000).fadeIn(500);
     }
-    if(scrollVal >= 1440){
+    if(scrollVal >= $("#skill").offset().top -window.innerHeight){
         $(".graph p").show(500);
         $(".skillList .html").delay(1000).slideDown();
         $(".skillList .js").delay(1300).slideDown();
         $(".skillList .git").delay(1600).slideDown();
         $(".skillList .adobe").delay(1900).slideDown();
     }
-    if(scrollVal >= 2200){
+    if(scrollVal >= $("#portfolo").offset().top -window.innerHeight){
         $(".portfoloAll").slideDown(1000);
     }
-    if(scrollVal >= 3300){
+    if(scrollVal >= $("#contact").offset().top -window.innerHeight
+    ){
         $(".form").removeClass("none");
         $(".form").addClass("slideInLeft");
         $(".info").removeClass("none");
