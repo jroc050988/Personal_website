@@ -193,7 +193,12 @@ header .scroll .line03 {
           justify-content: flex-end;
   list-style: none;
   border-bottom: 1px solid #6A8372;
-  padding: 10px 0;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.menu li {
+  cursor: pointer;
 }
 
 .menu li:first-child {
@@ -204,7 +209,7 @@ header .scroll .line03 {
 .menu li a {
   color: #6A8372;
   text-decoration: none;
-  padding: 10px;
+  padding: 20px;
 }
 
 .menu li a:hover {
@@ -283,6 +288,19 @@ header .scroll .line03 {
   margin-right: 10px;
 }
 
+.menu_space {
+  height: 66px;
+  width: 100%;
+}
+
+.fixed {
+  z-index: 999;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
 .wrap section {
   padding: 125px  0;
 }
@@ -347,6 +365,8 @@ header .scroll .line03 {
   height: 300px;
   background-size: cover;
   background-position: center;
+  -webkit-box-shadow: 3px 3px 5px #333;
+          box-shadow: 3px 3px 5px #333;
   border-radius: 5px;
 }
 
@@ -530,6 +550,11 @@ header .scroll .line03 {
   margin: 8px 6px;
   background-color: #333;
   border: 1px solid #6A8372;
+}
+
+.portfolo_content .portfolo:hover {
+  -webkit-box-shadow: 5px 5px 5px rgba(51, 51, 51, 0.5);
+          box-shadow: 5px 5px 5px rgba(51, 51, 51, 0.5);
 }
 
 .portfolo_content .portfolo:hover .name {
