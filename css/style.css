@@ -153,6 +153,13 @@ header .tittle {
   border-radius: 5px;
 }
 
+@media screen and (max-width: 767px) {
+  header .tittle {
+    width: 300px;
+    margin: -185px -150px 0 0;
+  }
+}
+
 header .tittle h1 {
   margin-top: 61.5px;
   margin-bottom: 10px;
@@ -216,7 +223,6 @@ header .scroll .line03 {
 }
 
 .menu {
-  min-width: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,13 +235,35 @@ header .scroll .line03 {
   margin: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .menu {
+    width: 100%;
+    display: none;
+    padding: 20px;
+  }
+}
+
 .menu li {
   cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .menu li {
+    padding: 10px;
+    width: 180px;
+    margin: 0 auto;
+  }
 }
 
 .menu li:first-child {
   position: absolute;
   left: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .menu li:first-child {
+    position: unset;
+  }
 }
 
 .menu li a {
@@ -244,20 +272,14 @@ header .scroll .line03 {
   padding: 20px;
 }
 
-.menu li a:hover {
-  border-bottom: 5px solid #6A8372;
+@media screen and (max-width: 767px) {
+  .menu li a {
+    padding: 10px;
+  }
 }
 
-.menu li a::before {
-  content: " ";
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-image: url("");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-right: 10px;
+.menu li a:hover {
+  border-bottom: 5px solid #6A8372;
 }
 
 .menu li .menu_home::before {
@@ -272,6 +294,12 @@ header .scroll .line03 {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .menu li .menu_home::before {
+    margin-right: 40px;
+  }
+}
+
 .menu li .menu_resume::before {
   content: " ";
   display: inline-block;
@@ -282,6 +310,12 @@ header .scroll .line03 {
   background-size: cover;
   background-repeat: no-repeat;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .menu li .menu_resume::before {
+    margin-right: 40px;
+  }
 }
 
 .menu li .menu_skill::before {
@@ -296,6 +330,12 @@ header .scroll .line03 {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .menu li .menu_skill::before {
+    margin-right: 40px;
+  }
+}
+
 .menu li .menu_portfolo::before {
   content: " ";
   display: inline-block;
@@ -306,6 +346,12 @@ header .scroll .line03 {
   background-size: cover;
   background-repeat: no-repeat;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .menu li .menu_portfolo::before {
+    margin-right: 40px;
+  }
 }
 
 .menu li .menu_contact::before {
@@ -320,9 +366,55 @@ header .scroll .line03 {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .menu li .menu_contact::before {
+    margin-right: 40px;
+  }
+}
+
 .menu_space {
   height: 66px;
   width: 100%;
+}
+
+nav .hamburger {
+  border-bottom: 1px solid #6A8372;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  nav .hamburger {
+    display: block;
+  }
+}
+
+nav .hamburger .hamburger_btn {
+  width: 30px;
+  height: 23px;
+  position: absolute;
+  right: 0;
+  padding: 21.5px;
+}
+
+nav .hamburger .hamburger_btn .line {
+  width: 30px;
+  height: 3px;
+  background-color: #6A8372;
+  position: absolute;
+  right: 50%;
+  margin: 0 -15px 0 0;
+}
+
+nav .hamburger .hamburger_btn .line01 {
+  top: 21.5px;
+}
+
+nav .hamburger .hamburger_btn .line02 {
+  top: 31.5px;
+}
+
+nav .hamburger .hamburger_btn .line03 {
+  top: 41.5px;
 }
 
 .fixed {
@@ -331,6 +423,20 @@ header .scroll .line03 {
   position: fixed;
   top: 0;
   background-color: white;
+}
+
+.phone_fixed {
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .phone_fixed {
+    top: 66px;
+  }
 }
 
 .wrap section {
@@ -390,6 +496,18 @@ header .scroll .line03 {
   height: 300px;
 }
 
+@media screen and (min-width: 767px) and (max-width: 985px) {
+  .resume_content {
+    height: 580px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .resume_content {
+    height: 780px;
+  }
+}
+
 .resume_content .myphoto {
   float: left;
   width: 300px;
@@ -400,6 +518,20 @@ header .scroll .line03 {
   -webkit-box-shadow: 3px 3px 5px #333;
           box-shadow: 3px 3px 5px #333;
   border-radius: 5px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 985px) {
+  .resume_content .myphoto {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .resume_content .myphoto {
+    float: none;
+    margin: 0 auto;
+  }
 }
 
 .resume_content .introduction {
@@ -413,12 +545,68 @@ header .scroll .line03 {
   line-height: 1.5em;
 }
 
+@media screen and (min-width: 767px) and (max-width: 985px) {
+  .resume_content .introduction p {
+    margin: 100px auto 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .resume_content .introduction p {
+    margin: 60px auto;
+    line-height: 2em;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 985px) {
+  .resume_content .introduction {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .resume_content .introduction {
+    float: none;
+    margin: 0 auto;
+    width: 300px;
+  }
+}
+
 .skill_content {
   min-height: 300px;
 }
 
+@media screen and (min-width: 767px) and (max-width: 985px) {
+  .skill_content {
+    min-height: 540px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .skill_content {
+    min-height: 704px;
+  }
+}
+
 .skill_content .graph {
   float: left;
+}
+
+@media screen and (min-width: 767px) and (max-width: 985px) {
+  .skill_content .graph {
+    width: 300px;
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .skill_content .graph {
+    width: 300px;
+    float: none;
+    margin: 0 auto;
+  }
 }
 
 .skill_content .graph p {
@@ -436,6 +624,21 @@ header .scroll .line03 {
   margin: 60px auto;
 }
 
+@media screen and (min-width: 767px) and (max-width: 985px) {
+  .skill_content .skillList {
+    float: none;
+    margin: 60px auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .skill_content .skillList {
+    width: 300px;
+    float: none;
+    margin: 60px auto;
+  }
+}
+
 .skill {
   margin-top: 20px;
 }
@@ -451,6 +654,12 @@ header .scroll .line03 {
   display: flex;
 }
 
+@media screen and (max-width: 767px) {
+  .skill .tittle {
+    display: block;
+  }
+}
+
 .skill .tittle P {
   margin: 0;
   width: 130px;
@@ -464,6 +673,13 @@ header .scroll .line03 {
   height: 30px;
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+@media screen and (max-width: 767px) {
+  .skill .tittle .down {
+    right: -130px;
+    top: -28px;
+  }
 }
 
 .skill .tittle .down .line {
@@ -498,8 +714,15 @@ header .scroll .line03 {
 
 .skill .tittle .graph_line {
   position: relative;
+  display: inline-block;
   width: 300px;
   margin-left: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .skill .tittle .graph_line {
+    margin-left: 0;
+  }
 }
 
 .skill .tittle .graph_line .line_bottom {
@@ -571,6 +794,22 @@ header .scroll .line03 {
   min-height: 658px;
 }
 
+@media screen and (min-width: 767px) and (max-width: 985px) {
+  .portfolo_content {
+    width: 464px;
+    margin: 0 auto;
+    min-height: 1375px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .portfolo_content {
+    width: 300px;
+    margin: 0 auto;
+    min-height: 1200px;
+  }
+}
+
 .portfolo_content .portfolo {
   position: relative;
   overflow: hidden;
@@ -582,6 +821,13 @@ header .scroll .line03 {
   margin: 8px 6px;
   background-color: #333;
   border: 1px solid #6A8372;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolo_content .portfolo {
+    width: 300px;
+    margin: 0 auto;
+  }
 }
 
 .portfolo_content .portfolo:hover {
@@ -632,11 +878,32 @@ header .scroll .line03 {
 }
 
 .contact_content {
-  height: 325px;
+  min-height: 500px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 985px) {
+  .contact_content {
+    width: 488px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact_content {
+    width: 300px;
+    margin: 0 auto;
+    min-height: 400px;
+  }
 }
 
 .contact_content .form {
   float: left;
+}
+
+@media screen and (max-width: 767px) {
+  .contact_content .form {
+    float: none;
+  }
 }
 
 .contact_content .form input {
@@ -647,6 +914,15 @@ header .scroll .line03 {
   padding: 8px;
 }
 
+@media screen and (max-width: 767px) {
+  .contact_content .form input {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 300px;
+    margin: 10px auto;
+  }
+}
+
 .contact_content .form .message {
   margin: 10px;
   width: 450px;
@@ -655,6 +931,15 @@ header .scroll .line03 {
   border: 1px solid #6A8372;
   border-radius: 5px;
   padding: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact_content .form .message {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 300px;
+    margin: 10px auto;
+  }
 }
 
 .contact_content .form .btn {
@@ -684,6 +969,20 @@ header .scroll .line03 {
   padding: 0;
 }
 
+@media screen and (min-width: 767px) and (max-width: 985px) {
+  .contact_content .info {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact_content .info {
+    float: none;
+    margin: 60px auto;
+  }
+}
+
 .contact_content .info li {
   margin: 10px 0;
 }
@@ -700,6 +999,12 @@ header .scroll .line03 {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .contact_content .info .myname::before {
+    margin-right: 40px;
+  }
+}
+
 .contact_content .info .myphone::before {
   content: " ";
   display: inline-block;
@@ -712,6 +1017,12 @@ header .scroll .line03 {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .contact_content .info .myphone::before {
+    margin-right: 40px;
+  }
+}
+
 .contact_content .info .myemail::before {
   content: " ";
   display: inline-block;
@@ -722,6 +1033,12 @@ header .scroll .line03 {
   background-size: cover;
   background-repeat: no-repeat;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact_content .info .myemail::before {
+    margin-right: 40px;
+  }
 }
 
 footer {

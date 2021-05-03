@@ -20,10 +20,12 @@ $(window).scroll(function () {
     var scrollVal = $(this).scrollTop();
     // console.log(scrollVal);
     if(scrollVal >= window.innerHeight){
-        $(".menu").addClass("fixed");
+        $(".menu").addClass("phone_fixed");
+        $(".hamburger").addClass("fixed");
         $(".menu_space").removeClass("none");
     }else{
-        $(".menu").removeClass("fixed");
+        $(".menu").removeClass("phone_fixed");
+        $(".hamburger").removeClass("fixed");
         $(".menu_space").addClass("none");
     }
     if(scrollVal >= 600){
@@ -74,10 +76,12 @@ $(document).ready(function (){
     });
 
 
-    function moveto(id){
+    function moveto(id){ 
         $('html, body').animate({
         scrollTop: $(id).offset().top -70
         }, 500);
+        if(window.innerWidth > 767){return};
+        $(".menu").attr("style","display: none;");
     }
 
     $(".scroll").click(function (e) { 
@@ -85,4 +89,16 @@ $(document).ready(function (){
         moveto("#resume");
     });
 
+    $(".hamburger_btn").click(function (e) { 
+        e.preventDefault();
+        $(".menu").toggle();
+    });
+
 });
+
+//避免html屬性 syle = "display: none;"時，轉回電腦板無法顯示問題
+window.onresize = function(){
+    if($(".menu").attr("style") == "display: none;"){
+        $(".menu").attr("style","");
+    }
+}

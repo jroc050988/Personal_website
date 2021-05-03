@@ -15,4 +15,22 @@ $tittlefontsize:30px;
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: 10px;
+    @include phone{
+        margin-right: 40px
+    }
+};
+@mixin ipad {
+    @media screen and (min-width: 767px) and (max-width: 985px){
+        @content
+    }
+};
+@mixin phone {
+    @media screen and (max-width: 767px){
+        @content
+    }
+};
+@mixin pc{
+    @media screen and (min-width: 985px){
+        @content
+    }
 }
